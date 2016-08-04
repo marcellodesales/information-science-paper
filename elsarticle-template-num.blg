@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/MacPorts 2013_5)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: elsarticle-template-num.aux
+The style file: elsarticle-num.bst
+Database file #1: biblio.bib
+Warning--empty pages in mix-zone-vanets
+Warning--empty pages in caravan
+Warning--empty pages in sybil-impact3
+You've used 54 entries,
+            2937 wiz_defined-function locations,
+            1027 strings with 17044 characters,
+and the built_in function-call counts, 19815 in all, are:
+= -- 1942
+> -- 585
+< -- 20
++ -- 231
+- -- 177
+* -- 1517
+:= -- 2546
+add.period$ -- 81
+call.type$ -- 54
+change.case$ -- 53
+chr.to.int$ -- 0
+cite$ -- 57
+duplicate$ -- 680
+empty$ -- 2267
+format.name$ -- 224
+if$ -- 5176
+int.to.chr$ -- 0
+int.to.str$ -- 54
+missing$ -- 54
+newline$ -- 216
+num.names$ -- 54
+pop$ -- 406
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1247
+stack$ -- 0
+substring$ -- 1146
+swap$ -- 253
+text.length$ -- 20
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 163
+width$ -- 56
+write$ -- 532
+(There were 3 warnings)

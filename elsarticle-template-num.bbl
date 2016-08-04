@@ -1,0 +1,367 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{al2013comprehensive}
+S.~Al-Sultan, M.~M. Al-Doori, A.~H. Al-Bayatti, H.~Zedan,
+  \href{http://dx.doi.org/10.1016/j.jnca.2013.02.036i}{A comprehensive survey
+  on vehicular ad hoc network}, Journal of Network and Computer Applications 37
+  (2014) 380--392.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.jnca.2013.02.036i}
+
+\bibitem{80211p}
+V.~D. Khairnar, K.~Kotecha, Performance of vehicle-to-vehicle communication
+  using ieee 802.11p in vehicular ad-hoc network environment., International
+  Journal of Network Security \& Its Applications 5~(2).
+
+\bibitem{gillani2013survey}
+S.~Gillani, F.~Shahzad, A.~Qayyum, R.~Mehmood, A survey on security in
+  vehicular ad hoc networks, in: Communication Technologies for Vehicles,
+  Springer, 2013, pp. 59--74.
+
+\bibitem{li2011feasibility}
+M.-W. Li, T.-H. Wu, W.-Y. Lin, K.-C. Lan, C.-M. Chou, C.-H. Hsu,
+  \href{http://dx.doi.org/10.5402/2011/723814}{On the feasibility of using
+  802.11 p for communication of electronic toll collection systems}, ISRN
+  Communications and Networking (2011) 31\href
+  {http://dx.doi.org/10.5402/2011/723814} {\path{doi:10.5402/2011/723814}}.
+\newline\urlprefix\url{http://dx.doi.org/10.5402/2011/723814}
+
+\bibitem{riley2011survey}
+M.~Riley, K.~Akkaya, K.~Fong, A survey of authentication schemes for vehicular
+  ad hoc networks, Security and Communication Networks 4~(10) (2011)
+  1137--1152.
+\newblock \href {http://dx.doi.org/10.1002/sec.239}
+  {\path{doi:10.1002/sec.239}}.
+
+\bibitem{keys-distro1}
+M.~Raya, J.-P. Hubaux,
+  \href{http://dl.acm.org/citation.cfm?id=1370616.1370618}{Securing vehicular
+  ad hoc networks}, Journal of Computer Security 15~(1) (2007) 39--68.
+\newline\urlprefix\url{http://dl.acm.org/citation.cfm?id=1370616.1370618}
+
+\bibitem{keys-distro2-thesis}
+A.~Wasef, R.~Lu, X.~Lin, X.~Shen, Complementing public key infrastructure to
+  secure vehicular ad hoc networks, Wireless Communications 17~(5) (2010)
+  22--28.
+\newblock \href {http://dx.doi.org/10.1109/MWC.2010.5601954}
+  {\path{doi:10.1109/MWC.2010.5601954}}.
+
+\bibitem{keys-distro8}
+A.~Bradai, H.~Afifi, A framework using ibc achieving non-repudiation and
+  privacy in vehicular network, in: Conference on Network and Information
+  Systems Security, IEEE, 2011, pp. 1--6.
+\newblock \href {http://dx.doi.org/10.1109/SAR-SSI.2011.5931386}
+  {\path{doi:10.1109/SAR-SSI.2011.5931386}}.
+
+\bibitem{authentication-group1}
+Y.~Hao, Y.~Chengcheng, C.~Zhou, W.~Song,
+  \href{http://dx.doi.org/10.1109/JSAC.2011.110311}{A distributed key
+  management framework with cooperative message authentication in vanets},
+  Selected Areas in Communications, IEEE Journal on 29~(3) (2011) 616--629.
+\newblock \href {http://dx.doi.org/10.1109/JSAC.2011.110311}
+  {\path{doi:10.1109/JSAC.2011.110311}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1109/JSAC.2011.110311}
+
+\bibitem{authentication-id-based1}
+J.~Sun, C.~Zhang, Y.~Zhang, Y.~Fang,
+  \href{http://doi.ieeecomputersociety.org/10.1109/TPDS.2010.14}{An
+  identity-based security system for user privacy in vehicular ad hoc
+  networks}, Parallel and Distributed Systems, IEEE Transactions on 21~(9)
+  (2010) 1227--1239.
+\newline\urlprefix\url{http://doi.ieeecomputersociety.org/10.1109/TPDS.2010.14}
+
+\bibitem{mix-zone-vanets}
+J.~Freudiger, M.~Raya, M.~F{\'e}legyh{\'a}zi, P.~Papadimitratos, et~al.,
+  Mix-zones for location privacy in vehicular networks, in: Proceedings of the
+  first international workshop on wireless networking for intelligent
+  transportation systems, 2007.
+
+\bibitem{haas2010impact}
+J.~J. Haas, Y.-C. Hu, K.~P. Laberteaux,
+  \href{http://dx.doi.org/10.1002/sec.143}{The impact of key assignment on
+  vanet privacy}, Security and Communication Networks 3~(2-3) (2010) 233--249.
+\newline\urlprefix\url{http://dx.doi.org/10.1002/sec.143}
+
+\bibitem{calandriello2007efficient}
+G.~Calandriello, P.~Papadimitratos, J.-P. Hubaux, A.~Lioy,
+  \href{http://dx.doi.org/10.1145/1287748.1287752}{Efficient and robust
+  pseudonymous authentication in vanet}, in: Proceedings of the fourth ACM
+  international workshop on Vehicular ad hoc networks, ACM, 2007, pp. 19--28.
+\newline\urlprefix\url{http://dx.doi.org/10.1145/1287748.1287752}
+
+\bibitem{sun2010efficient}
+Y.~Sun, R.~Lu, X.~Lin, X.~Shen, J.~Su, An efficient pseudonymous authentication
+  scheme with strong privacy preservation for vehicular communications,
+  vehicular Technology, IEEE Transactions on 59~(7) (2010) 3589--3603.
+
+\bibitem{mix-zone}
+A.~R. Beresford, F.~Stajano,
+  \href{http://dx.doi.org/10.1109/MPRV.2003.1186725}{Location privacy in
+  pervasive computing}, Pervasive Computing, IEEE 2~(1) (2003) 46--55.
+\newblock \href {http://dx.doi.org/10.1109/MPRV.2003.1186725}
+  {\path{doi:10.1109/MPRV.2003.1186725}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1109/MPRV.2003.1186725}
+
+\bibitem{lu2012pseudonym}
+R.~Lu, X.~Li, T.~H. Luan, X.~Liang, X.~Shen, Pseudonym changing at social
+  spots: An effective strategy for location privacy in vanets, Vehicular
+  Technology, IEEE Transactions on 61~(1) (2012) 86--96.
+\newblock \href {http://dx.doi.org/10.1109/TVT.2011.2162864}
+  {\path{doi:10.1109/TVT.2011.2162864}}.
+
+\bibitem{buttyan2007effectiveness}
+L.~Butty{\'a}n, T.~Holczer, I.~Vajda, On the effectiveness of changing
+  pseudonyms to provide location privacy in vanets, in: Security and Privacy in
+  Ad-hoc and Sensor Networks, Springer, 2007, pp. 129--141.
+\newblock \href {http://dx.doi.org/10.1007/978-3-540-73275-4\_10}
+  {\path{doi:10.1007/978-3-540-73275-4\_10}}.
+
+\bibitem{caravan}
+K.~Sampigethaya, L.~Huang, M.~Li, R.~Poovendran, K.~Matsuura, K.~Sezaki,
+  Caravan: Providing location privacy for vanet, in: in Embedded Security in
+  Cars, 2005.
+
+\bibitem{buttyan2009slow}
+L.~Butty{\'a}n, T.~Holczer, A.~Weimerskirch, W.~Whyte, Slow: A practical
+  pseudonym changing scheme for location privacy in vanets, in: Vehicular
+  Networking Conference, IEEE, 2009, pp. 1--8.
+
+\bibitem{mix-zone-motion}
+S.~Du, H.~Zhu, X.~Li, K.~Ota, M.~Dong, Mixzone in motion: Achieving dynamically
+  cooperative location privacy protection in delay-tolerant networks, Vehicular
+  Technology, IEEE Transactions on 62~(9) (2013) 4565--4575.
+\newblock \href {http://dx.doi.org/10.1109/TVT.2013.2266347}
+  {\path{doi:10.1109/TVT.2013.2266347}}.
+
+\bibitem{sybil}
+J.~R. Douceur, The sybil attack, in: Revised Papers from the First
+  International Workshop on Peer-to-Peer Systems, Springer-Verlag, London, UK,
+  UK, 2002, pp. 251--260.
+
+\bibitem{sybil-impact3}
+T.~Leinm{\"u}ller, E.~Schoch, Greedy routing in highway scenarios: The impact
+  of position faking nodes, in: Proceedings of Workshop On Intelligent
+  Transportation, 2006.
+
+\bibitem{sybil-impact2}
+J.~Grover, D.~Kumar, M.~Sargurunathan, M.~Gaur, V.~Laxmi,
+  \href{http://dx.doi.org/10.1007/978-3-642-14478-3\_47}{Performance evaluation
+  and detection of sybil attacks in vehicular ad-hoc networks}, Recent Trends
+  in Network Security and Applications (2010) 473--482.
+\newline\urlprefix\url{http://dx.doi.org/10.1007/978-3-642-14478-3\_47}
+
+\bibitem{sybil-attack-impact-routing1}
+S.~Ramachandran, V.~Shanmugan, Impact of sybil and wormhole attacks in location
+  based geographic multicast routing protocol for wireless sensor networks,
+  Journal of Computer Science 7~(7) (2011) 973--979.
+
+\bibitem{keys-distro4}
+Y.~Hao, Y.~Chengcheng, C.~Zhou, W.~Song, A distributed key management framework
+  with cooperative message authentication in vanets, IEEE J.Sel. A. Commun.
+  29~(3) (2011) 616--629.
+\newblock \href {http://dx.doi.org/10.1109/JSAC.2011.110311}
+  {\path{doi:10.1109/JSAC.2011.110311}}.
+
+\bibitem{keys-distro5}
+C.~Zhang, X.~Lin, R.~Lu, P.-H. Ho, Raise: An efficient rsu-aided message
+  authentication scheme in vehicular communication networks, in: IEEE
+  International Conference on Communications, 2008, pp. 1451--1457.
+\newblock \href {http://dx.doi.org/10.1109/ICC.2008.281}
+  {\path{doi:10.1109/ICC.2008.281}}.
+
+\bibitem{keys-distro55}
+C.~Zhang, X.~Lin, R.~Lu, P.~Ho, X.~Shen, An efficient message authentication
+  scheme for vehicular communications, IEEE Transactions on Vehicular
+  Technology 57~(6) (2008) 3357--3368.
+\newblock \href {http://dx.doi.org/10.1109/TVT.2008.928581}
+  {\path{doi:10.1109/TVT.2008.928581}}.
+
+\bibitem{keys-distro7}
+M.~Verma, D.~Huang, Segcom: secure group communication in vanets, in: 6th IEEE
+  Consumer Communications and Networking Conference, IEEE, 2009, pp. 1--5.
+\newblock \href {http://dx.doi.org/10.1109/CCNC.2009.4784943}
+  {\path{doi:10.1109/CCNC.2009.4784943}}.
+
+\bibitem{profile-generation1}
+R.~Hussain, S.~Kim, H.~Oh, Towards privacy aware pseudonymless strategy for
+  avoiding profile generation in vanet, Information Security Applications
+  (2009) 268--280\href {http://dx.doi.org/10.1007/978-3-642-10838-9\_20}
+  {\path{doi:10.1007/978-3-642-10838-9\_20}}.
+
+\bibitem{rsu-placement1}
+T.~Wu, W.~Liao, C.~Chang,
+  \href{http://dx.doi.org/10.1109/TCOMM.2012.062512.100550}{A cost-effective
+  strategy for road-side unit placement in vehicular networks}, IEEE
+  Transactions on Communications 60~(8) (2012) 2295--2303.
+\newline\urlprefix\url{http://dx.doi.org/10.1109/TCOMM.2012.062512.100550}
+
+\bibitem{rsu-placement2}
+O.~Trullols, M.~Fiore, C.~Casetti, C.~Chiasserini, J.~Barcelo~Ordinas,
+  \href{http://dx.doi.org/10.1016/j.comcom.2009.11.021}{Planning roadside
+  infrastructure for information dissemination in intelligent transportation
+  systems}, Computer Communications 33~(4) (2010) 432--442.
+\newblock \href {http://dx.doi.org/10.1016/j.comcom.2009.11.021}
+  {\path{doi:10.1016/j.comcom.2009.11.021}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.comcom.2009.11.021}
+
+\bibitem{rsu-placement3}
+E.~S. Cavalcante, A.~L. Aquino, G.~L. Pappa, A.~A. Loureiro, Roadside unit
+  deployment for information dissemination in a vanet: an evolutionary
+  approach, in: Proceedings of the fourteenth international conference on
+  Genetic and evolutionary computation conference companion, GECCO Companion
+  '12, ACM, New York, NY, USA, 2012, pp. 27--34.
+\newblock \href {http://dx.doi.org/10.1145/2330784.2330789}
+  {\path{doi:10.1145/2330784.2330789}}.
+
+\bibitem{p2dap2}
+T.~Zhou, R.~Choudhury, P.~Ning, K.~Chakrabarty, P2dap-sybil attacks detection
+  in vehicular ad hoc networks, Selected Areas in Communications, IEEE Journal
+  on 29~(3) (2011) 582--594.
+\newblock \href {http://dx.doi.org/10.1109/JSAC.2011.110308}
+  {\path{doi:10.1109/JSAC.2011.110308}}.
+
+\bibitem{p2dap}
+T.~Zhou, R.~R. Choudhury, P.~Ning, K.~Chakrabarty,
+  \href{http://dx.doi.org/10.1109/MOBIQ.2007.4451013}{Privacy-preserving
+  detection of sybil attacks in vehicular ad hoc networks}, in: Mobile and
+  Ubiquitous Systems: Networking \& Services, 2007. MobiQuitous 2007. Fourth
+  Annual International Conference on, IEEE, 2007, pp. 1--8.
+\newblock \href {http://dx.doi.org/10.1109/MOBIQ.2007.4451013}
+  {\path{doi:10.1109/MOBIQ.2007.4451013}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1109/MOBIQ.2007.4451013}
+
+\bibitem{sybil-time-space1}
+S.~Chang, Y.~Qi, H.~Zhu, J.~Zhao, X.~Shen,
+  \href{http://doi.ieeecomputersociety.org/10.1109/TPDS.2011.263}{Footprint:
+  Detecting sybil attacks in urban vehicular networks}, Parallel and
+  Distributed Systems, IEEE Transactions on 23~(6) (2012) 1103--1114.
+\newline\urlprefix\url{http://doi.ieeecomputersociety.org/10.1109/TPDS.2011.263}
+
+\bibitem{sybil-time-space2}
+C.~Chen, X.~Wang, W.~Han, B.~Zang,
+  \href{http://dx.doi.org/10.1109/ICDCSW.2009.48}{A robust detection of the
+  sybil attack in urban vanets}, in: Distributed Computing Systems Workshops,
+  2009. ICDCS Workshops' 09. 29th IEEE International Conference on, IEEE, 2009,
+  pp. 270--276.
+\newblock \href {http://dx.doi.org/10.1109/ICDCSW.2009.48}
+  {\path{doi:10.1109/ICDCSW.2009.48}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1109/ICDCSW.2009.48}
+
+\bibitem{sybil-time-stamp1}
+S.~Park, B.~Aslam, D.~Turgut, C.~Zou,
+  \href{http://dl.acm.org/citation.cfm?id=1856821.1856828}{Defense against
+  sybil attack in vehicular ad hoc network based on roadside unit support}, in:
+  Military Communications Conference, 2009. MILCOM 2009. IEEE, IEEE, 2009, pp.
+  1--7.
+\newline\urlprefix\url{http://dl.acm.org/citation.cfm?id=1856821.1856828}
+
+\bibitem{sybil-neighborhood1}
+C.~Piro, C.~Shields, B.~Levine, Detecting the sybil attack in mobile ad hoc
+  networks, in: Securecomm and Workshops, 2006, IEEE, 2006, pp. 1--11.
+
+\bibitem{sybil-neighborhood3}
+Y.~Hao, J.~Tang, Y.~Cheng, Cooperative sybil attack detection for position
+  based applications in privacy preserved vanets, in: Global Telecommunications
+  Conference (GLOBECOM 2011), 2011 IEEE, IEEE, 2011, pp. 1--5.
+\newblock \href {http://dx.doi.org/10.1109/GLOCOM.2011.6134242}
+  {\path{doi:10.1109/GLOCOM.2011.6134242}}.
+
+\bibitem{group-sign}
+D.~Chaum, E.~Van~Heyst, Group signatures, in: Advances in
+  Cryptology-EUROCRYPT'91, Springer, 1991, pp. 257--265.
+\newblock \href {http://dx.doi.org/10.1007/3-540-46416-6\_22}
+  {\path{doi:10.1007/3-540-46416-6\_22}}.
+
+\bibitem{k-anonymity}
+L.~Sweeney, k-anonymity: a model for protecting privacy, Int. J. Uncertain.
+  Fuzziness Knowl.-Based Syst. 10~(5) (2002) 557--570.
+\newblock \href {http://dx.doi.org/10.1142/S0218488502001648}
+  {\path{doi:10.1142/S0218488502001648}}.
+
+\bibitem{trust}
+G.~Theodorakopoulos, J.~S. Baras, On trust models and trust evaluation metrics
+  for ad hoc networks, Selected Areas in Communications, IEEE Journal on 24~(2)
+  (2006) 318--328.
+\newblock \href {http://dx.doi.org/10.1109/JSAC.2005.861390}
+  {\path{doi:10.1109/JSAC.2005.861390}}.
+
+\bibitem{burrows1989logic}
+M.~Burrows, M.~Abadi, R.~M. Needham,
+  \href{http://doi.acm.org/10.1145/77648.77649}{A logic of authentication},
+  Proceedings of the Royal Society of London. A. Mathematical and Physical
+  Sciences 426~(1871) (1989) 233--271.
+\newblock \href {http://dx.doi.org/10.1145/77648.77649}
+  {\path{doi:10.1145/77648.77649}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/77648.77649}
+
+\bibitem{replay-attack}
+P.~Syverson, A taxonomy of replay attacks [cryptographic protocols], in:
+  Computer Security Foundations Workshop VII, 1994. CSFW 7. Proceedings, IEEE,
+  1994, pp. 187--191.
+\newblock \href {http://dx.doi.org/10.1109/CSFW.1994.315935}
+  {\path{doi:10.1109/CSFW.1994.315935}}.
+
+\bibitem{elliptic-curve}
+N.~Koblitz, Elliptic curve cryptography, Mathematics of Computation 48~(177).
+
+\bibitem{boneh2004group}
+D.~Boneh, H.~Shacham, \href{http://dx.doi.org/10.1145/1030083.1030106}{Group
+  signatures with verifier-local revocation}, in: Proceedings of the 11th ACM
+  conference on Computer and communications security, ACM, 2004, pp. 168--177.
+\newline\urlprefix\url{http://dx.doi.org/10.1145/1030083.1030106}
+
+\bibitem{sommer2011traffic}
+C.~Sommer, O.~K. Tonguz, F.~Dressler, Traffic information systems: efficient
+  message dissemination via adaptive beaconing, Communications Magazine, IEEE
+  49~(5) (2011) 173--179.
+\newblock \href {http://dx.doi.org/10.1109/MCOM.2011.5762815}
+  {\path{doi:10.1109/MCOM.2011.5762815}}.
+
+\bibitem{sybil-survey3}
+J.~Newsome, E.~Shi, D.~Song, A.~Perrig, The sybil attack in sensor networks:
+  analysis \& defenses, in: Proceedings of the 3rd international symposium on
+  Information processing in sensor networks, ACM, 2004, pp. 259--268.
+
+\bibitem{tran2012combating}
+N.~Tran, Combating sybil attacks in cooperative systems, Ph.D. thesis, New York
+  University (2012).
+
+\bibitem{reputation-sybil2}
+K.~Hoffman, D.~Zage, C.~Nita-Rotaru,
+  \href{http://doi.acm.org/10.1145/1592451.1592452}{A survey of attack and
+  defense techniques for reputation systems}, ACM Computing Surveys (CSUR)
+  42~(1) (2009) 1.
+\newblock \href {http://dx.doi.org/10.1145/1592451.1592452}
+  {\path{doi:10.1145/1592451.1592452}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/1592451.1592452}
+
+\bibitem{xiao2007security}
+Y.~Xiao, Security in Distributed, Grid, Mobile, and Pervasive Computing, Taylor
+  \& Francis, 2007.
+
+\bibitem{sybil-neighborhood2}
+J.~Grover, M.~Gaur, V.~Laxmi, N.~Prajapati,
+  \href{http://doi.acm.org/10.1145/2070425.2070450}{A sybil attack detection
+  approach using neighboring vehicles in vanet}, in: Proceedings of the 4th
+  international conference on Security of information and networks, ACM, 2011,
+  pp. 151--158.
+\newblock \href {http://dx.doi.org/10.1145/2070425.2070450}
+  {\path{doi:10.1145/2070425.2070450}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/2070425.2070450}
+
+\bibitem{shannon}
+C.~E. Shannon, A mathematical theory of communication, ACM SIGMOBILE Mobile
+  Computing and Communications Review 5~(1) (2001) 3--55.
+\newblock \href {http://dx.doi.org/10.1002/j.1538-7305.1948.tb00917.x}
+  {\path{doi:10.1002/j.1538-7305.1948.tb00917.x}}.
+
+\bibitem{diaz2002information}
+C.~D{\i}az, J.~Claessens, S.~Seys, B.~Preneel, Information theory and
+  anonymity, in: Proceedings of the 23rd Symposium on Information Theory in the
+  Benelux, 2002, pp. 179--186.
+
+\end{thebibliography}

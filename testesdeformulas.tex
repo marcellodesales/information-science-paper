@@ -1,0 +1,209 @@
+\documentclass[]{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{multicol}
+
+\begin{document}
+
+\title{Title}
+\author{Author}
+\date{Today}
+\maketitle
+
+$\rho\mathcal(U)$ = 1 (includes digital certificates)
+\\
+
+$\rho\mathcal(N)$ = 0 (UUIDs are private nonces)
+
+%\[
+% $\rho\mathcal(K)$ =
+%  \begin{cases} 
+%   0 & \text{if } k = k_{c, i}^{-} ~(\forall \{k_{c, i}^{-}, cert_{c, i} \} \in TK_c) ~\text{or } k = k_{RSU}^{-} \\
+%   1       & otherwise
+%  \end{cases}
+%\]
+
+\begin{equation*}
+\[
+   $\rho\mathcal(K)$ =
+    \begin{cases}
+        0 & \parbox[t]{.6\textwidth}{\text{if } k = k_{c, i}^{-} ~(\forall \{k_{c, i}^{-}, cert_{c, i} \} \in TK_c) \\
+        \text{or } k = k_{RSU}^{-}  }\\
+        
+        1 & \text{otherwise}
+    \end{cases}
+\]
+\end{equation*}
+
+%\[
+%  $\rho(\{m\}_k)$ =
+%  \begin{cases} 
+%   0 & \text{if } \{m\}_k = \{uuid_c.cert_{c, i}\}_{k_{rsu}^{+}} or \{m\}_k = \{uuid_c.cert_{c, i}\}_{k_{rsu}^{+}} \\
+%   1       & \text{otherwise}
+%  \end{cases}
+%\]
+
+\begin{equation*}
+\[
+  $\rho(\{m\}_k)$ =
+    \begin{cases}
+        0 & \parbox[t]{.6\textwidth}{\text{if } \{m\}_k = \{uuid_c.cert_{c, i}\}_{k_{rsu}^{+}} \\
+        \text{or}~\{m\}_k = \{uuid_c.uuid_{rsu}\}_{k_{c, i}^{+}} \\
+        \text{or}~\{m\}_k = \{uuid_{rsu}\}_{k_{rsu}^{+}} \\
+        \text{or}~\{m\}_k = \{uuid_c.TK_c\}_{k_{rsu}^{+}} }\\
+        
+        1 & \text{otherwise}
+    \end{cases}
+\]
+\end{equation*}
+
+$\rho(m_1.m_2) = min\{\rho(m_1), \rho(m_2)\}$
+\\
+
+$\rho(Running\_Vehicle.v_c.rsu.uuid_c) = 1$
+\\
+
+$\rho(Running\_RSU.rsu_q.v_c.uuid_{rsu_q}) = 1$
+\\
+
+$\rho(Commit\_RSU.rsu_q.v_c.uuid_{c}) = 0$
+\\
+
+$\rho(Commit\_Vehicle.v_c.rsu_q.uuid_{rsu_q}) = 0$
+
+
+Thiago \parbox[t]{.6\textwidth}{Sales \\ Bruno \\ lakjsd}\\
+
+
+$\{ \{uuid_c.cert_{c,i} \}_{Sign(gpk, gsk_{c})}\}_{k^{+}_{RSU}}$
+\\
+
+$ \{uuid_c.uuid_{rsu} \}_{k^{+}_{c, i}}$
+\\
+
+$signal.Running\_Vehicle.v_{c}.rsu$
+\\
+
+$ \{uuid_{rsu} \}_{k^{+}_{RSU}}$
+\\
+
+$signal.Running\_RSU.rsu.v_c$
+\\
+
+$ \{uuid_c.TK_c \}_{k^{+}_{c, i}}$
+\\
+
+$signal.Commit\_Vehicle.v_c.rsu$
+\\
+
+$signal.Commit\_RSU.rsu.v_c$
+
+==============
+\\
+
+%\parbox[t]{1.2\textwidth}{$Vehicle_c(v_c, uuid_c, cert_{c,i}) = \\ 
+%env?rsu:RoadSide \rightarrow send.v_c.rsu.\{ \{uuid_c.cert_{c,i} \}_{Sign(gpk, gsk_{c})}\}_{k^{+}_{RSU}} \rightarrow $} 
+%
+%\parbox[t]{1.2\textwidth}{$\underset{CCCC}{\underset{BBB}{\underset{ AAAA }{\Box}}}\\ 
+%env?rsu:RoadSide \rightarrow send.v_c.rsu.\{ \{uuid_c.cert_{c,i} \}_{Sign(gpk, gsk_{c})}\}_{k^{+}_{RSU}} \rightarrow $} 
+
+
+\parbox[t]{1.2\textwidth}{$Vehicle_c(v_c, uuid_c, cert_{c,i}, gpk, gsk_c) = \\ 
+env?rsu:RoadSide \rightarrow send.v_c.rsu.\{ \{uuid_c.cert_{c,i} \}_{Sign(gpk, gsk_{c})}\}_{k^{+}_{RSU}} \rightarrow \\
+  \underset{TK_c \subseteq Pseud}{\underset{uuid_{RSU} \in Nonce_c}{\underset{ k^{+}_{RSU} \in K_{RSU} }{\Box}}}
+  \begin{pmatrix}
+    receive.v_c.rsu.\{uuid_c.uuid_{rsu}\}_{k^{+}_{c, i}} \rightarrow \\
+    signal.Running\_Vehicle.v_c.rsu \rightarrow \\
+    send.v_c.rsu.\{ uuid_{rsu}\}_{k^{+}_{RSU}} \rightarrow \\
+    receive.v_c.rsu.\{ uuid_c.TK_c\}_{k^{+}_{c, i}} \rightarrow \\
+    signal.Commit\_Vehicle.v_c.rsu \rightarrow STOP
+  \end{pmatrix}
+$} 
+\\
+$V_{a, b} = $ \parbox[t]{1.2\textwidth}{$|||_{uuid_a \in Nonce\_V_a} Vehicle(a, uuid_a, ...) \\ 
+||| \\
+|||_{uuid_b \in Nonce\_V_b} Vehicle(b, uuid_b, ...)  \\
+$}
+\\
+
+
+$RoadSideUnit(rsu) = \underset{uuid_r \in Nonce\_RSU}{\underset{TK_c \subseteq Pseud}{|||}} RoadSide(rsu, TK_c, uuid, K^{+}_{RSU})$
+
+$\underset{xxx}{\underset{TK_c \subseteq Pseud}{|||}}$
+
+\\
+where,
+	
+\parbox[t]{1.2\textwidth}{$RoadSide(rsu, TK_c, uuid_{rsu}, k^{+}_{RSU}) = \\ 
+env?v_c:Vehicle \rightarrow  receive.rsu.v_c.\{uuid_c.cert_{c, i}\}_{k^{+}_{RSU}} \rightarrow \\
+  \underset{uuid_{c} \in Nonce}{\underset{cert_{c, i} \vdash k^{+}_{c,i}}{\underset{ cert_{c, i} \in TK_{c'} }{\Box}}}
+  \begin{pmatrix}
+    send.rsu.v_c.\{uuid_c.uuid_{rsu}\}_{k^{+}_{c, i}} \rightarrow \\
+    receive.rsu.v_c.\{ uuid_{rsu}\}_{k^{+}_{RSU}} \rightarrow \\
+    signal.Running\_RSU.rsu.v_c \rightarrow \\
+    send.rsu.v_c.\{ uuid_c.TK_c\}_{k^{+}_{c, i}} \rightarrow \\
+    signal.Commit\_RSU.rsu.v_c \rightarrow RoadSide(rsu, TK, uuid,  
+  \end{pmatrix}
+$} 
+\\
+
+=========
+\\
+
+$E(k^{+}_{RSU}, \sigma = Sign(\{gpk, gsk_{c}\}, cert_{c, i}, uuid_c))$
+\\
+
+$E(k^{+}_{c,i}, uuid_c, uuid_{rsu})$
+\\
+
+$E(k^{+}_{RSU}, uuid_{rsu})$
+\\
+
+$E(k^{+}_{c, i}, uuid_{c}, TK_{c})$
+
+$v_c$
+
+$Vehicle_c$
+
+$RoadSide$
+
+$RSU$
+
+%\begin{tabularx}{\textwidth}{|*{4}{Y|}}
+%\hline
+%\multirow{2}{*}{State of Health} 
+%  &\multicolumn{2}{c|}{Fasting Value}&After Eating\\
+%\cline{2-4}
+%             &Minimum       &Maximum &2 hours after eating\\
+%\hline
+%\end{tabularx}
+
+
+%\begin{tabular}{rl}
+%
+%    \parbox[t][][t]{3cm}{\raggedleft $\Box$ \\ AAAA \\BBBB} &
+%    \parbox[t][][t]{5cm}{$receive.v_c.rsu.$\\
+%                 Second line would be here\\
+%                 And so on, ...\\
+%                 ... until the very end.} \\
+%
+%\end{tabular}
+%
+%\[ 
+%\left \{
+%  \begin{tabular}{ccc}
+%  1 & 5 & 8 \\
+%  0 & 2 & 4 \\
+%  3 & 3 & -8 
+%  \end{tabular}
+%\right \}
+%\]
+%
+%\[
+% \Bigg \langle 3x+7 \Bigg \rangle
+%\]
+
+
+
+\end{document}
