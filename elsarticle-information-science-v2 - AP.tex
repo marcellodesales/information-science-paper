@@ -141,7 +141,7 @@ escapeinside={\%*}{*)}
 %\author[label1]{Thiago de Sales\corref{cor1}}
 %\ead{thiago.sales@ee.ufcg.edu.br}
 %\address[label1]{%
-%Aprigio Veloso Street, nº 882\\
+%Aprigio Veloso Street, nÂº 882\\
 %Electrical Engineering and Informatics Center (CEEI)\\
 %Federal University of Campina Grande (UFCG)\\
 %58429 900 Campina Grande, PB, Brazil\\
@@ -320,7 +320,7 @@ The remainder of the paper is organized as follows: Section~\ref{sec:solution} d
 \section{A Privacy-preserving Authentication and Sybil Attack Detection Protocol for VANET}
 \label{sec:solution}
 
-This section details the \protocolname~architecture. The goal is to provide strong privacy-preserving authentication and non-repudiation while detecting \textit{sybil} attacks.
+This section details the \protocolname~architecture. The goal is to detect \textit{sybil} attacks using a strong privacy-preserving authentication mechanism with non-repudiation.
 
 %\subsection{The Threat Model}
 %
@@ -330,7 +330,7 @@ This section details the \protocolname~architecture. The goal is to provide stro
 
 %The \protocolname~uses the concepts of pseudonyms and the anonymity set theory for protecting users' privacy, as well as the group signature scheme for providing non-repudiation. To detect \textit{sybil} attacks while preserving users' privacy, the \protocolname~organizes the vehicles into multiple anonymity sets organized in a multilevel architecture. This way, each vehicle shares a set of attributes with other vehicles, but it must have at least one attribute that differs from other vehicles in a given period of time.
 
-The \protocolname~protocol is divided into four phases: the registration phase (Phase 1); the temporary identity (pseudonym) assignment phase (Phase 2); the \textit{sybil} detection phase (Phase 3); and the prosecution phase (Phase 4). For the next sections, Table~\ref{tab:nomenclature} summarizes the notations for the protocol description.
+The \protocolname~protocol is divided into four phases: the registration (Phase 1); the temporary identity (pseudonym) assignment (Phase 2); the \textit{sybil} detection (Phase 3); and the prosecution (Phase 4). For the next sections, Table~\ref{tab:nomenclature} summarizes the notations for the protocol description.
 
 \begin{longtable}{ p{.15\textwidth} p{.70\textwidth} }
 \caption{Notations.} % needs to go inside longtable environment
@@ -391,7 +391,7 @@ such that,
 
 \subsection{Vehicle Registration and Authentication (Phase 1)}
 \label{sec:phase1}
-Figure~\ref{fig:vehicle-registration} depicts the registration phase. A CA is responsible for managing the unique vehicles' identities by using the Group Signature Scheme~\cite{group-sign}. A vehicle $v_{c}$  has its own group signing key ($gsk_{c}$) and also shares the group public key (\textit{gpk}) with others. Vehicles also store the digital certificate of the CA ($cert_{CA}$) and the digital certificate of the road side units ($cert_{RSU}$). Moreover, each vehicle receives a set $TK_{c}$ of \textit{w} temporary (identities, or pseudonyms) asymmetric key pairs and their digital certificates ($k^{+}_{c,i}$, $k^{-}_{c,i}$, $cert_{c,i}$, $1 \le i \le w$). In case of judicial disputes, the CA is the only entity that can trace the original vehicle identity from a given message $m_{c}$ using its group manager secret key (\textit{gmsk}).
+Figure~\ref{fig:vehicle-registration} depicts the registration phase. A CA is responsible for managing the unique vehicles' identities by using the Group Signature Scheme~\cite{group-sign}. A vehicle $v_{c}$  has its own group signing key ($gsk_{c}$) and also shares the group public key (\textit{gpk}) with others. Vehicles also store the digital certificate of the CA ($cert_{CA}$) and the digital certificate of the road side units ($cert_{RSU}$). Moreover, each vehicle receives a set $TK_{c}$ of \textit{w} temporary (identities, or pseudonyms) asymmetric key pairs and their digital certificates ($k^{+}_{c,i}$, $k^{-}_{c,i}$, $cert_{c,i}$, $1 \le i \le w$). In case of judicial disputes, the CA is the only entity that can trace the original vehicle's identity from a given message $m_{c}$ using its group manager secret key (\textit{gmsk}).
 
 
 %Figure~\ref{fig:vehicle-registration} summarizes the process of vehicle registration and authentication as the first step of the execution of the \protocolname~protocol. A CA is responsible for managing the unique identities of the vehicles by using the group signature scheme. Each vehicle has its own group sign key ($gsk_{c}$) and also shares the group public key (\textit{gpk}) with others. Vehicles also store the digital certificate of the CA ($cert_{CA}$) and the digital certificate of the roadside units ($cert_{RSU}$). Moreover, each vehicle receives one temporary (pseudonym) asymmetric key pair and its certificate ($k^{+}_{c,1}$, $k^{-}_{c,1}$, $cert_{c,1}$). In case of judicial disputes, the CA is the only entity that can trace the original vehicle identity from a given message using its group manager secret key (\textit{gmsk}).
@@ -403,7 +403,7 @@ Figure~\ref{fig:vehicle-registration} depicts the registration phase. A CA is re
 \label{fig:vehicle-registration}
 \end{figure}
 
-The second step of the registration phase aims to cluster each vehicle into multiple sets of vehicles $AS_{i,j}$ ($i, j \in \mathbb{N}^{*}; 1 \le i \le m, 1 \le j \le n$). Each set $AS_{i,j}$  has all of the properties of the anonymity set theory. According to Figure~\ref{fig:multilevel-arch}, the anonymity sets $AS_{m,n}$ are organized in \textit{m} levels, where each level has \textit{n} anonymity sets. The proposed multilevel anonymity set architecture has the following properties, which from 1 to 3 aim at protecting users privacy, while property 4 aims at detecting \textit{sybil} attacks:
+The second step of the registration phase aims to cluster each vehicle into multiple sets of vehicles $AS_{i,j}$ ($i, j \in \mathbb{N}^{*}; 1 \le i \le m, 1 \le j \le n$). Each set $AS_{i,j}$  has all of the properties of the anonymity set theory. According to Figure~\ref{fig:multilevel-arch}, the anonymity sets $AS_{m,n}$ are organized in \textit{m} levels, where each level has \textit{n} anonymity sets. The proposed multilevel anonymity set architecture has the following properties: while 1 through 3 aim at protecting users privacy, property 4 aims at detecting \textit{sybil} attacks:
 
 \begin{enumerate}
 	\item Let K-AS = \{$AS_{1,1}$, $AS_{1,2}$, ..., $AS_{1,n}$, ...,  $AS_{2,1}$, $AS_{2,2}$, ..., $AS_{2,n}$, ..., $AS_{m,n}$\} be the set of all anonymity sets;
@@ -441,7 +441,7 @@ $v_{c} = \langle (gsk_{c}, gpk), TK_{c}, AS_{c}, CERT_{AS_{c}}  \rangle$.
 \subsection{Temporary Key Assignment (Phase 2)}
 \label{sec:phase2}
 
-In order to protect users' privacy, the multiple-pseudonym approach is used, and the second phase is responsible for managing pseudonym assignments to vehicles. In the \protocolname~protocol, cryptography asymmetric key pairs represent vehicle pseudonyms. For instance, the key pair $k^{+}_{c, i}/k^{-}_{c, i}$ and its digital certificate $cert_{c,i}$ is the $i^{th}$ pseudonym of the vehicle $v_{c}$. Vehicles obtain temporary keys from authenticated RSUs available along the roads.
+In order to protect users' privacy, the multiple-pseudonym approach is used for managing pseudonym assignments to vehicles in phase 2. In the \protocolname~protocol, cryptography asymmetric key pairs represent vehicle pseudonyms. For instance, the key pair $k^{+}_{c, i}/k^{-}_{c, i}$ and its digital certificate $cert_{c,i}$ is the $i^{th}$ pseudonym of the vehicle $v_{c}$. Vehicles obtain temporary keys from authenticated RSUs available along the roads.
 
 We modeled the proposed pseudonym renewal protocol using the CSP (Communication Sequencial Process) notation. However, before diving into the details of the protocol's authentication properties in CSP notation, we first give an overview of such protocol, as illustrated in Figure~\ref{fig:renewalprotocol}:
 
@@ -465,9 +465,9 @@ We modeled the proposed pseudonym renewal protocol using the CSP (Communication 
     \end{multlined}
 	\end{equation}			
 	
-	If valid, the RSU creates a new UUID value ($uuid_{rsu}$) and returns to the vehicle, which aims at allowing vehicle's authentication and avoiding \textit{man-in-the-middle} attacks. The RSU encrypts the received $uuid_{c}$ as well as the new UUID value with the $i^{th}$ vehicle public key $k^{+}_{c,i}$, which is available in the vehicle's $i^{th}$ digital certificate, received in the request message in Step 1. This response message is then sent back to $v_c$.
+	If valid, the RSU creates a new UUID value ($uuid_{rsu}$) and returns to the vehicle, which aims at allowing vehicle's authentication and avoiding \textit{man-in-the-middle} attacks. The RSU encrypts the received $uuid_{c}$ and the new UUID value with the $i^{th}$ vehicle public key $k^{+}_{c,i}$, which is available in the vehicle's $i^{th}$ digital certificate received in the request message in Step 1. This response message is then sent back to $v_c$.
 	
-	\item In Step 3, the vehicle checks if the received UUID is the same as it sent previously. If so, $v_{c}$ returns the received UUID ($uuid_{rsu}$) by encrypting it with the RSU's public key.
+	\item In Step 3, the vehicle checks if the received UUID is the same as it had sent previously. If so, $v_{c}$ returns the received UUID ($uuid_{rsu}$) by encrypting it with the RSU's public key.
 	
 	\item In Step 4, the RSU checks if the proposed UUID ($uuid_{rsu}$) is the same as it had sent in Step 2. If so,  the RSU has authenticated vehicle $v_{c}$. Hence, the $RSU$ generates the new set of keys $TK_{c} = \{ (k^{+}_{c,1}/k^{-}_{c,1}), (k^{+}_{c,2}/k^{-}_{c,2}), (k^{+}_{c,3}/k^{-}_{c,3})..., (k^{+}_{c,w}/k^{-}_{c,w})\}$ for vehicle $v_{c}$ and authenticates each key. Therefore, we have $Signed^{cert_{c,i}}_{RSU}$:
 	
@@ -476,7 +476,7 @@ We modeled the proposed pseudonym renewal protocol using the CSP (Communication 
 	\forall k^{+}_{c,i} \in TK_{c} (1 \le i \le w), Sign(k^{-}_{RSU}, k^{+}_{c,i}) = cert_{c,i}.
 \end{equation}
 
-	Finally, the $RSU$ returns the new set of temporary keys  $TK_{c}$ to the vehicle $v_{c}$ by encrypting the message with the $i^{th}$ $v_{c}$'s temporary public key received in Step 1, and the $v_{c}$'s $UUID_c$ value. Vehicle $v_{c}$ accepts $TK_c$ if, and only if, $UUID_c$ received from RSU is the same as it sent in Step 1. Each key pair and its digital certificate represent a $v_{c}$'s temporary identity, also called pseudonym.
+	Finally, the $RSU$ returns the new set of temporary keys  $TK_{c}$ to the vehicle $v_{c}$ by encrypting the message with the $i^{th}$ $v_{c}$'s temporary public key received in Step 1, and the $v_{c}$'s $UUID_c$ value. Vehicle $v_{c}$ accepts $TK_c$ if, and only if, $UUID_c$ received from RSU is the same as it sent in Step 1. Each key pair and its digital certificate represent a $v_{c}$'s temporary identity, which is also called pseudonym.
 	
 \end{itemize}
 
@@ -493,7 +493,7 @@ Vehicles must store all anonymity set digital certificates and temporary keys in
 %\label{fig:tamper-proof}
 %\end{figure}
 
-We now model the pseudonym renewal protocol as a network and detail the authentication property for this network as a trace specification. Within this context, Schneider~\cite{schneider1998verifying} proposed an extension for CSP and introduced additional control events known as signals. These signal events are used in trace specifications to express the authentication goals of a protocol. Therefore, these signal events will be useful to show the correctness of the pseudonym renewal protocol, as will be discussed in Section~\ref{sec:authenticationCorrectness}.
+We now model the pseudonym renewal protocol as a network and detail the authentication property for this network as a trace specification. Within this context, Schneider~\cite{schneider1998verifying} proposed an extension for CSP and introduced additional control events known as signals. These signal events are used in trace specifications to express the authentication goals of a protocol. Therefore, these signal events will be useful to show the correctness of the pseudonym renewal protocol, as it will be discussed in Section~\ref{sec:authenticationCorrectness}.
 
 The following CSP specification represents a vehicle process during the pseudonym renewal protocol execution. The signal $Running\_Vehicle.v_c.rsu$ indicates that the vehicle $v_{c}$ is aware of its involvement in a run with the road side unit (rsu) and the nonce $uuid_c$ makes part of this run.
 \\
@@ -511,7 +511,7 @@ env?rsu:RoadSide \rightarrow send.v_c.rsu.\{ \{uuid_c.cert_{c,i} \}_{Sign(gpk, g
 $}
 \\
 
-To ensure that all protocol runs use different nonces (\textit{uuids}), we use pairwise disjoint sets $Nonce\_V_a$ and $Nonce\_V_b$ to represent all of the nonces that vehicle $v_a$ might use in a protocol execution in the role of $Vehicle_{a}$, and a vehicle $v_{b}$ in the role of $Vehicle_b$, respectively. Therefore, we have the following specification:
+To ensure that all protocol executions use different nonces (\textit{uuids}), we use pairwise disjoint sets $Nonce\_V_a$ and $Nonce\_V_b$ to represent all of the nonces that vehicle $v_a$ might use in a protocol execution in the role of $Vehicle_{a}$, and a vehicle $v_{b}$ in the role of $Vehicle_b$, respectively. Therefore, we have the following specification:
 \\
 
 $V_{a, b} = $ \parbox[t]{1.2\textwidth}{$|||_{uuid_a \in Nonce\_V_a} Vehicle(a, uuid_a, ...) \\
@@ -520,9 +520,9 @@ $V_{a, b} = $ \parbox[t]{1.2\textwidth}{$|||_{uuid_a \in Nonce\_V_a} Vehicle(a, 
 $}
 \\
 
-For each \textit{Running} signal, there is a corresponding \textit{Commit} signal. In the Vehicle process, the signal $Commit\_Vehicle.v_c.rsu$ indicates that the vehicle has completed the protocol run and authenticated the communicating \textit{rsu}.
+For each \textit{Running} signal, there is a corresponding \textit{Commit} signal. In the Vehicle process, the signal $Commit\_Vehicle.v_c.rsu$ indicates that the vehicle has completed the protocol execution and authenticated the communicating \textit{rsu}.
 
-The specification that represents a road side unit during the pseudonym renewal protocol execution is described as the \textit{RoadSide} process, given as follows: 
+The specification that represents a road side unit, during the pseudonym renewal protocol execution, is described as the \textit{RoadSide} process described as follows: 
 \\
 \vspace{0,5cm}
 \small{
@@ -547,7 +547,7 @@ $RoadSideUnit(rsu) = \underset{uuid_r \in Nonce\_RSU}{\underset{TK_c \subseteq P
 \\
 
 
-\noindent where the set $Pseud$ has infinity temporary public key pairs, and the set \textit{Nonce\_RSU} includes infinity \textit{uuid} values. The above specifications will be important to prove the correctness of the proposed pseudonym renewal protocol, where a third process, called Intruder, is assumed to be in complete control of the network. We will model our network as a $SYSTEM$ specification, where the process \textit{Vehicle} and \textit{RoadSide} communicate with each other only through an  \textit{Intruder} process.
+\noindent where the set $Pseud$ has infinite temporary public key pairs, and the set \textit{Nonce\_RSU} includes infinite \textit{uuid} values. The above specifications will be important to prove the correctness of the proposed pseudonym renewal protocol, where a third process, called Intruder, is assumed to be in complete control of the network. We will model our network as a $SYSTEM$ specification, where the process \textit{Vehicle} and \textit{RoadSide} communicate with each other only through an \textit{Intruder} process.
 
 \subsection{Sending and Receiving Messages on V2V Communications}
 \label{sec:sendingandreceiving}
@@ -561,7 +561,7 @@ From now on, a legitimate vehicle $v_{c}$ may send messages to other vehicles. F
 \label{fig:msg-format}
 \end{figure}
 
-The multiple-pseudonym approach proposed herein may use any of the pseudonym change approaches available in the literature~\cite{lu2012pseudonym}, \cite{mix-zone-vanets}, \cite{buttyan2007effectiveness}, \cite{caravan}, \cite{buttyan2009slow} and \cite{mix-zone-motion}. However, the change of pseudonyms may imply a change on the current anonymity set digital certificates $CERT^{t}_{AS_{c}}$ that the vehicle $v_{c}$ must use, as defined on the Property 3 (b) of the Multilevel \protocolname~Architecture.
+The multiple-pseudonym approach proposed herein may use any of the pseudonym change approaches available in the literature~\cite{lu2012pseudonym}, \cite{mix-zone-vanets}, \cite{buttyan2007effectiveness}, \cite{caravan}, \cite{buttyan2009slow} and \cite{mix-zone-motion}. However, the change of pseudonyms may also imply a change on the current anonymity set digital certificates $CERT^{t}_{AS_{c}}$ that the vehicle $v_{c}$ must use, as defined on the Property 3 (b) of the Multilevel \protocolname~Architecture.
 
 %For instance, suppose that $v_{c}$ belongs to the following anonymity sets of 5 levels ($m = 5$): $AS_{c} = \{AS_{1,1}, AS_{1,3}, AS_{1,12}, AS_{1,22}, AS_{1,35}, AS_{2,5}, AS_{2,9}, AS_{2,18}, \newline AS_{2,23}, AS_{3,6}, AS_{3,15}, AS_{3,21}, AS_{4,9}, AS_{4,27}, AS_{4,32}, AS_{5,2}, AS_{5,11}, AS_{5,23}, AS_{5,43}\}$. If $v_{c}$ is currently sending messages with pseudonym $cert_{c, 3} \in TK_{c}$  and its current anonymity set digital certificates is $CERT^{t_{1}}_{AS_{c}} = \{cert_{AS_{1, 3}}$, $cert_{AS_{2, 18}}$, $cert_{AS_{3, 6}}$, $cert_{AS_{4, 32}}$, $cert_{AS_{5, 23}}\}$, then the change from the pseudonym $cert_{c, 3}$ to $cert_{c, 4} \in TK_{c}$ requires a new subset $CERT^{t_{2}}_{AS_{c}}$ of anonymity set digital certificates. This approach aims to avoid pseudonym linkage, in which an eavesdropper is able to associate two or more pseudonyms that belong to the same vehicle in different time intervals.
 
@@ -610,14 +610,14 @@ The third phase of the \protocolname~protocol is the \textit{sybil} attack detec
 In the sybil attack, a vehicle uses multiple identities to disseminate the same false event. This vehicle is the sybil vehicle.
 \end{definition}
 
-In VANETs, vehicles disseminate events in order to provide vehicular safety applications. Examples may include accident reporting, an approaching safety vehicle, and electronic emergency braking warnings, to name a few. These events are classified as sporadic events. Beacon messages, may also be an event and are classified as periodic events. An event is defined as follows:
+In VANETs, vehicles disseminate events in order to provide vehicular safety applications. Examples may include accident reporting, an approaching safety vehicle, and electronic emergency braking warnings, to name a few. These events are classified as sporadic events. Similarly, beacon messages may be an event and are classified as periodic events. An event is defined as follows:
 
 \begin{definition}
 \label{def:event}
 An event, as defined in~\cite{p2dap2}, is represented as a tuple $\langle evt, l, t \rangle$, where \textit{evt} is the event type, \textit{l} and \textit{t} are the location and the time interval in which the event occurred, respectively.
 \end{definition}
 
-The privacy-preserving \textit{sybil} detection phase explores the multilevel anonymity set architecture to detect \textit{sybil} attacks from beacon and event-driven messages. The properties 1 to 3 provide privacy control, while property 4 allows the \textit{sybil} detection process. The basic detection concept is as follows: any two or more messages with different pseudonyms, which disseminate the same event, cannot include the same subset of anonymity set digital certificates. Hence, during a \textit{sybil} attack, the system must evaluate the Equation~\ref{eq:sybil-detection-eq}, where $V_{l}$ is the set of vehicles in the transmission range in a given location \textit{l}.
+The privacy-preserving \textit{sybil} detection phase explores the multilevel anonymity set architecture to detect \textit{sybil} attacks from beacon and event-driven messages. The properties 1 through 3 provide privacy control, while property 4 allows the \textit{sybil} detection process. The basic detection concept is as follows: any two or more messages with different pseudonyms, which disseminate the same event, cannot include the same subset of anonymity set of digital certificates. Hence, during a \textit{sybil} attack, the system must evaluate the Equation~\ref{eq:sybil-detection-eq}, where $V_{l}$ is the set of vehicles in the transmission range in a given location \textit{l}.
 
 \begin{equation}
 \label{eq:sybil-detection-eq}
@@ -644,7 +644,7 @@ Detecting \textit{sybil} attacks from beacon messages. To detect a \textit{sybil
 \end{center}
 \end{figure}
 
-Figure~\ref{fig:sybildetectionexecution} depicts the \textit{sybil} attack detection. The malicious vehicle $v_{e}$ fires a \textit{sybil} attack by sending 3 different beacon messages that describe 3 location points. Since beacon messages are broadcasted to all vehicles in the transmission range, the vehicle $v_{a}$ observes that other vehicle(s) is (are) transmitting messages that contain the same first level anonymity set digital certificate ($AS_{1, 2}$). $v_{a}$ attaches the next anonymity set digital certificate (e.g.: $cert_{2,4}$) and sends it on its next beacon message.
+Figure~\ref{fig:sybildetectionexecution} depicts the \textit{sybil} attack detection. The malicious vehicle $v_{e}$ fires a \textit{sybil} attack by sending 3 different beacon messages that describe 3 location points. Since beacon messages are broadcasted to all vehicles in the transmission range, the vehicle $v_{a}$ observes that one or more vehicles are transmitting messages that contain the same first level anonymity set digital certificate ($AS_{1, 2}$). $v_{a}$ attaches the next anonymity set digital certificate (e.g.: $cert_{2,4}$) and sends it on its next beacon message.
 
 When $v_{e}$ receives $v_{a}$'s message, it must have to update to the next two levels. Since $v_{e}$ knows that it also belongs to anonymity set $AS_{2, 4}$, it also must include the third anonymity set digital certificate (e.g.; $cert_{3, 2}$), otherwise vehicles in the vicinity will only drop the messages and the \textit{sybil} attack has no effect. On the other hand, the other vehicles (e.g.: $v_{b}$, $v_{c}$, $v_{d}$, $v_{f}$, $v_{g}$) only store $v_{e}$'s and $v_{a}$'s messages. After receiving $v_{e}$'s messages, $v_{a}$ attaches the fourth level anonymity set digital certificate (e.g.: $cert_{4, 4}$) and sends it all together. Finally, the malicious vehicle sends its fourth level anonymity set digital certificate (e.g.: $cert_{4,6}$).
 
